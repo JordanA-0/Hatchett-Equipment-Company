@@ -1,0 +1,387 @@
+.goldman-regular {
+  font-family: "Goldman", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.goldman-bold {
+  font-family: "Goldman", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 480;
+  font-style: normal;
+}
+
+.electrolize-regular {
+  font-family: "Electrolize", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* WHOLE PAGE BACKGROUND */
+body {
+    background-color: #a8a1a128;
+    
+}
+
+
+
+
+
+/* NAV AREA */
+.site-header {
+    border-top: 6px solid #d96922;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* COMPANY NAME AND PHONE */
+.company-banner {
+    background: linear-gradient(120deg, #212529, #41464b);
+    color: #ffffff;
+}
+
+        .company-title {
+            display: block;
+            color: #ffffff;
+            text-decoration: none;
+
+            font-size: clamp(1.6rem, 4vw, 2.5rem);
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+
+
+/* CALL BUTTON */
+.call-button {
+    display: inline-block;
+    padding: 10px 24px;
+
+    background-color: #f2ad45;
+    color: #212529;
+    border: 2px solid #ffc978;
+    border-radius: 50px;
+
+    font-weight: 700;
+    text-decoration: none;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    
+}
+
+.call-button:hover,
+.call-button:focus-visible {
+    background-color: #ffc978;
+    color: #212529;
+}
+
+
+/* MENU BAR */
+.main-nav {
+    background-color: #f8f9fa;
+    border-bottom: 4px solid #d96922;
+}
+
+.main-nav .navbar-nav {
+    width: 100%;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 8px 0;
+}
+
+.main-nav .nav-link {
+    padding: 8px 16px;
+    border-radius: 6px;
+
+    color: #343a40;
+    font-weight: 700;
+    text-align: left;
+
+   
+}
+
+.main-nav .nav-link:hover,
+.main-nav .nav-link:focus-visible,
+.main-nav .nav-link.show {
+    background-color: #f5e2d5;
+    color: #8c3910;
+}
+
+.main-nav .nav-link.active {
+    background-color: #d96922;
+    color: #ffffff;
+}
+
+        /* DROPDOWN BOXES */
+        .main-nav .dropdown-menu {
+            min-width: 250px;
+            max-width: 100%;
+            max-height: 65vh;
+            overflow-y: auto;
+
+            padding: 8px;
+            background-color: #ffffff;
+
+            border: 1px solid #dee2e6;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+        }
+
+/* LINKS INSIDE DROPDOWNS */
+.main-nav .dropdown-item {
+    padding: 8px 12px;
+    border-radius: 5px;
+
+    color: #343a40;
+    white-space: normal;
+    overflow-wrap: break-word;
+}
+
+.main-nav .dropdown-item:hover,
+.main-nav .dropdown-item:focus-visible {
+    background-color: #f5e2d5;
+    color: #8c3910;
+}
+
+.main-nav .dropdown-item:active {
+    background-color: #d96922;
+    color: #ffffff;
+}
+
+.main-nav .menu-overview {
+    font-weight: 700;
+}
+
+
+/* KEYBOARD FOCUS   
+------ This is a TAB feature that many websites have to navigate a website! */
+.site-header a:focus-visible,
+.site-header button:focus-visible {
+    outline: 3px solid #a74613;
+    outline-offset: 3px;
+}
+
+ 
+
+
+
+/* INTRODUCTION PANEL */
+.home-intro {
+    padding: 30px;
+    background-color: #ffffff;
+
+    border-left: 6px solid #d96922;
+    border-radius: 12px;
+    
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+
+.home-message {
+    padding: 10px;
+}
+
+.home-message h1 {
+    max-width: 700px;
+    margin-bottom: 20px;
+
+    color: #212529;
+           padding-left: 30px;        
+    font-size: 200%;
+    font-weight: 640;
+    line-height: 1.15;
+}
+
+/* SHORT ORANGE/GOLD LINE */
+.home-accent {
+    width: 100px;
+    height: 5px;
+    margin-bottom: 25px;
+
+    background: linear-gradient(to right, #d96922, #f2ad45);  /* This is a cool style tip */
+    border-radius: 5px;
+}
+
+.home-message p {
+    margin-bottom: 0;
+  
+    line-height: 1.8;
+
+    font-weight: bold;
+    font-size: larger;
+}
+
+
+
+
+
+
+/* Randy PHOTO */
+.owner-photo {
+    display: block;
+
+    width: 100%;
+    max-width: 290px;
+    height: 380px;
+    margin: 0 auto;
+
+    object-fit: cover;      /* important(!keep forgetting); prevents stretching*/
+    object-position: center; /* important(!keep forgetting); prevents distortion*/
+
+            border: 5px solid #ffffff;    /* style; white outline */
+            border-radius: 22px;
+
+            box-shadow: 8px 8px 0 #f2ad45; /* style; controled shadow */
+}
+
+/* EQUIPMENT PHOTO GRID */
+.equipment-photos {
+    margin-top: 20px;
+}
+
+.equipment-frame {
+    overflow: hidden;
+
+                    aspect-ratio: 1/1;  /* style; keeps multiple images the same size */
+
+    background-color: #dee2e6;
+    border: 4px solid #ffffff;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.equipment-frame img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+/* DARK CONTACT PANEL */
+.home-contact {
+    margin-top: 30px;
+    padding: 30px;
+
+    background: linear-gradient(120deg, #212529, #41464b);
+    color: #ffffff;
+
+    border-bottom: 5px solid #d96922;
+    border-radius: 10px;
+}
+
+.home-contact h2 {
+    margin-bottom: 0;
+    font-size: 150%;
+    line-height: 1.4;
+}
+
+        /* CONTACT BUTTON */
+        .home-contact-button {
+            display: inline-block;
+            padding: 12px 25px;
+
+            background-color: #f2ad45;
+            color: #212529;
+
+            border: 2px solid #ffc978;
+            border-radius: 6px;
+
+            font-weight: 700;
+            text-decoration: none;
+
+           
+        }
+
+        .home-contact-button:hover,
+        .home-contact-button:focus-visible {
+            background-color: #ffc978;
+            color: #212529;
+        }
+
+        .home-contact-button:focus-visible {
+            outline: 3px solid #ffffff;
+            outline-offset: 4px;
+        }
+
+/* ADDRESS */
+.home-address {
+    padding: 25px 10px 5px;
+    color: #495057;
+    text-align: center;
+}
+
+.home-address p {
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+   
+  
+
+
+
+
+/*SIZE ADJUSTMENTS STARTS BELLOW // MAKE SURE ABOVE IS AS PERFECT AS POSSIBLE*/
+ @media screen and (max-width:991px){
+    
+    /*main{background-color: black;} 
+     HELPS FIGURE OUT HOW SMALL YOU WANT TO START CHANGING IT FOR OTHER DEVICES
+    .portfolio-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 1px;
+    }*/
+
+
+
+
+   .main-nav .nav-link {
+        width: 100%;
+    }
+
+    .main-nav .dropdown-menu {
+        width: 100%;
+        min-width: 0;
+        margin-top: 5px;
+        box-shadow: none;
+    }
+
+    
+    .home-main {
+        padding-top: 20px;
+    }
+
+    .home-intro,
+    .home-contact {
+        padding: 20px;
+    }
+
+    .home-message {
+        padding: 0;
+    }
+
+
+
+}
+
+
+
